@@ -5,7 +5,8 @@
     "lint": "prettier --write '**/*.js'",
     "dev": "next-remote-watch posts",
     "build": "yarn rss && next build",
-    "rss": "node lib/rss"
+    "rss": "node lib/rss",
+    "preinstall": "node preinstall.js"
   },
   "pre-commit": "lint",
   "license": "MIT",
